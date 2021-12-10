@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "searchInput": "../../components/searchNative/searchNative",
+    "Tabs": "../../components/tabs/tabs"
+  },
+  "navigationBarTitleText": "订单列表"
+}

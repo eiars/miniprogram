@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="welfare">
+  <searchNative></searchNative>
+  <view class="container_box">
+    <scroll-view class="left_box">
+      <view class="classifyTab {{index == defaultTab ?  'active' : ''}}" wx:for="{{cateClassifyList}}" data-index="{{index}}" wx:key="index" bindtap="classifyChange">{{item}}</view>
+    </scroll-view>
+    <scroll-view class="right_box" scroll-y scroll-y scroll-top="{{brandScrollTop}}">
+      <view wx:for="{{brandList}}" wx:key="cat_id">
+        <view class="goods_title">
+          <view class="title_name">{{item.cat_name}}</view>
+        </view>
+        <view class="brand_img">
+          <navigator wx:for="{{item.children}}" wx:for-item="children" wx:for-index="index2" wx:key="cat_id" url="/pages/goodList/index?cid={{children.cat_id}}">
+            <image src="{{children.cat_icon}}" mode="widthFix" />
+            <view>{{children.cat_name}}</view>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

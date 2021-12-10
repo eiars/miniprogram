@@ -1,0 +1,14 @@
+<!--pages/goodList/index.wxml-->
+<searchNative></searchNative>
+<tab tabData="{{tabData}}" id="box" bind:tabChange = "tabsItemChange">
+  <navigator class="item" wx:for="{{goodList}}" wx:key="goods_id" url="/pages/goodDetail/index?goods_id={{item.goods_id}}">
+    <view class="goods_img">
+       <image src="{{item.goods_small_logo}}" mode="widthFix"></image>
+    </view>
+    <view class="goods_text">
+      <text class="goods_name">{{item.goods_name}}</text>
+      <view class="goods_price">￥{{item.goods_price}}</view>
+    </view>
+  </navigator>
+</tab>
+<text class="none">没有更多了~</text>

@@ -1,0 +1,5 @@
+<!--pages/user/index.wxml-->
+<view class="user_info">
+  <view class="user_info_wrap">
+  </view>
+</view>

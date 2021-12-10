@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "searchNative": "../../components/searchNative/searchNative",
+    "tab": "../../components/tabs/tabs"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "navigationBarTitleText": "商品列表"
+}

@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 头部搜索框 -->
+  <searchNative class="search_bar"></searchNative>
+  <!-- swiper banner轮播 -->
+  <swiper class="swiper_banner" indicator-dots autoplay circular>
+      <swiper-item  wx:for="{{swiperData}}" wx:key="{{item.goods_id}}" item-id="{{item.goods_id}}">
+        <navigator url="{{item.navigator_url}}">
+          <image src="{{item.image_src}}" mode="widthFix"></image>
+        </navigator>
+      </swiper-item>
+  </swiper>
+  <!-- 产品分类导航 -->
+  <view class="pro_nav">
+    <navigator wx:for="{{classifyData}}" wx:key="{{item.name}}" url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+      <image src="{{item.image_src}}" mode="widthFix"></image>
+    </navigator>
+  </view>
+  <!-- 产品推荐楼层列表 -->
+  <view class="floor">
+    <view class="floors" wx:for="{{floorData}}" wx:for-index="{{index1}}" wx:key="{{name}}">
+      <view class="floors_title">
+        <image src="{{item.floor_title.image_src}}" mode="widthFix"></image>
+      </view>
+      <view class="floors_list">
+        <navigator wx:for="{{item.product_list}}" wx:for-item="list" wx:for-index="{{listindex}}" wx:key="{{name}}" url="{{navigator_url}}">
+          <image src="{{list.image_src}}" mode="{{listindex == 0 ? 'widthFix' : 'scaleToFill'}}"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

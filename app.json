@@ -1,0 +1,71 @@
+{
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#bc162c",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "entryPagePath": "pages/index/index",
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "darkmode": true,
+  "lazyCodeLoading": "requiredComponents",
+  "debug": true,
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#bc162c",
+    "list": [
+      {
+        "pagePath": "pages/discover/index",
+        "text": "发现",
+        "iconPath": "./images/discover.png",
+        "selectedIconPath": "./images/discover-on.png"
+      },
+      {
+        "pagePath": "pages/welfare/index",
+        "text": "优惠",
+        "iconPath": "./images/welfare.png",
+        "selectedIconPath": "./images/welfare-on.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home-on.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "./images/cart.png",
+        "selectedIconPath": "./images/cart-on.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "./images/my.png",
+        "selectedIconPath": "./images/my-on.png"
+      }
+    ]
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/discover/index",
+    "pages/welfare/index",
+    "pages/cart/index",
+    "pages/my/index",
+    "components/searchNative/searchNative",
+    "pages/goodList/index",
+    "components/tabs/tabs",
+    "pages/goodDetail/index",
+    "pages/pay/index",
+    "pages/auth/index",
+    "pages/order/index",
+    "pages/collect/index",
+    "pages/user/index"
+  ]
+}

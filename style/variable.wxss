@@ -1,0 +1,4 @@
+page {
+  --themeColor: #bc162c;
+  --themeBackground: #bc162c;
+}

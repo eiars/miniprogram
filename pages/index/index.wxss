@@ -1,0 +1,69 @@
+/**index.wxss**/
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.container {
+  width: 100%;
+}
+
+.container .search_bar {
+  width: 100%;
+}
+
+.container .swiper_banner {
+  width: 100%;
+}
+
+.container .pro_nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.pro_nav navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+.pro_nav image{
+  width: 100%;
+  height: 100%;
+}
+
+.container .floor {
+  width: 100%;
+  overflow: hidden;
+}
+.floor .floors_title {
+  margin: 40rpx 0 20rpx;
+}
+.floor .floors_list {
+  overflow: hidden;
+  display: inline-block;
+}
+.floors_list navigator {
+  width: 33.33vw;
+  height: 27.45258621vw;
+  float: left;
+  border-left: 10rpx solid #fff;
+  box-sizing: border-box;
+  border-bottom: none;
+}
+.floors_list navigator:first-of-type {
+  height: 55vw;
+}
+.floors_list navigator:nth-child(2),
+.floors_list navigator:nth-child(3) {
+  border-bottom: 10rpx solid #fff;
+}
+.floors_list navigator:nth-child(3),
+.floors_list navigator:nth-child(4) {
+  border-right: 10rpx solid #fff;
+}
+.floors_list image {
+  width: 100%;
+  height: 100%;
+}

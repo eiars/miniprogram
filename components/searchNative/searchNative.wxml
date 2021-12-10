@@ -1,0 +1,8 @@
+<!--components/searchNative/searchNative.wxml-->
+<view class="search_nav">
+  <view class="content">
+    <navigator url="/pages/discover/index">
+      <text class="iconfont icon-sousuo">搜索</text>
+    </navigator>
+  </view>
+</view>

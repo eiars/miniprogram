@@ -1,0 +1,61 @@
+/**index.wxss**/
+page {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.welfare {
+  width: 100%;
+  height: 100%;
+}
+.welfare .container_box{
+  width: 100%;
+  height: calc(100% - 90rpx);
+  display: flex;
+}
+.container_box .left_box{
+  border: 1rpx solid;
+  flex: 2;
+}
+.container_box .right_box{
+  border: 1px solid;
+  flex: 5;
+}
+.container_box .left_box .classifyTab{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-left: 8rpx solid #fff;
+  box-sizing: border-box;
+}
+.container_box .classifyTab.active{
+  color: #bc162c;
+  border-left: 8rpx solid #bc162c;
+}
+.right_box .goods_title {
+  width: 100%;
+  display: flex;
+  height: 80rpx;
+  align-items: center;
+  justify-content: center;
+}
+.right_box .goods_title .title_name::before,
+.right_box .goods_title .title_name::after{
+  content: '/';
+  color: #ccc;
+  padding: 0 20rpx;
+}
+.right_box .brand_img{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.right_box .brand_img navigator{
+  width: 33.33%;
+  text-align: center;
+  font-size: 26rpx;
+}
+.right_box .brand_img navigator image{
+  width: 50%;
+}
